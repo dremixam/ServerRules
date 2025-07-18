@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "serverrules",
+  "version": "${version}",
+  "name": "ServerRules",
+  "description": "",
+  "authors": ["DrEmixam"],
+  "contact": {},
+  "license": "AGPL-3.0",
+  "icon": "assets/serverrules/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.dremixam.serverrules.client.ServerrulesDataGenerator"
+    ],
+    "client": [
+      "com.dremixam.serverrules.client.ServerrulesClient"
+    ],
+    "main": [
+      "com.dremixam.serverrules.Serverrules"
+    ]
+  },
+  "mixins": [
+    "serverrules.mixins.json",
+    {
+      "config": "serverrules.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
