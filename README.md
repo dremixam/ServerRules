@@ -1,6 +1,6 @@
 # Server Rules Mod for Minecraft Fabric
 
-**Server Rules** is a Minecraft Fabric mod designed to help streamers and Server Rules easily manage their servers by inviting, uninviting, and banning members of their community. The mod works with the LuckPerms permission management system.
+**Server Rules** is a Minecraft Fabric mod designed to enforce server rules by displaying a mandatory rules screen to new players. Players must read and accept the rules before they can join the game, ensuring a friendly and respectful community environment.
 
 ## Features
 
